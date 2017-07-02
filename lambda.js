@@ -1,0 +1,1 @@
+module.exports.sample = require('./functions/index').handler

@@ -4,9 +4,8 @@ Resources:
   TimeFunction:
     Type: AWS::Lambda::Function
     Properties:
-      Handler: index.handler
+      Handler: lambda.sample
       Runtime: nodejs6.10
-      CodeUri: ./functions/
       Events:
         MyTimeApi:
           Type: Api
