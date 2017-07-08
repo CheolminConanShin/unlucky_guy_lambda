@@ -10,12 +10,13 @@
     "babel-core": "^6.24.1"
   },
   "devDependencies": {
+    "aws-sdk": "^2.82.0",
     "babel-preset-es2015": "^6.24.1",
     "mocha": "^3.4.2",
     "should": "^11.2.1"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register",
+    "test": "mocha --compilers js:babel-core/register",
     "package": "aws cloudformation package --template-file samTemplate.yaml --s3-bucket taco-stage --output-template-file NewSamTemplate.yaml"
   },
   "repository": {

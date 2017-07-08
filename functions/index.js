@@ -1,3 +1,4 @@
+var AWS = require('aws-sdk')
 var documentClient = new AWS.DynamoDB.DocumentClient()
 
 exports.handler = (event, context, callback) => {
